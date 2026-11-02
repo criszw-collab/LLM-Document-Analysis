@@ -1,8 +1,7 @@
 __pycache__/
 .ipynb_checkpoints/
 *.pyc
-sec8k_colab_v2/
+*.zip
 source_cache/
 checkpoints/
 responses/
-*.zip
