@@ -1,0 +1,20 @@
+{
+  "target": 100,
+  "selected": 100,
+  "attempted": 100,
+  "completed": 100,
+  "unprocessed": 0,
+  "product_rows": 7,
+  "review_items": 15,
+  "model_calls": 135,
+  "elapsed_minutes": 7.37,
+  "all_processing_complete": false,
+  "source_review_completed": false,
+  "submission_ready": false,
+  "method": "colab-single-pass-v2",
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+  "scope": "primary 8-K plus first Exhibit 99.1 only; selected passages",
+  "session_budget_minutes": 266.0,
+  "deadline_reached": false
+}
