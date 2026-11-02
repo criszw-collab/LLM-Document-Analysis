@@ -66,6 +66,9 @@ def build(zip_path,output,decision_path=None):
                 'final_csv_semantics':'Named or identifiable technical product families; expected availability and sampling explicitly retained',
                 'accuracy_metrics_measured':False}
  (data/'run_summary.json').write_text(json.dumps(final_summary,indent=2,ensure_ascii=False),encoding='utf-8')
+ # Save canonical filing metadata for the separate one-row-per-filing export.
+ metadata=[{k:next(r['filing'] for r in records if r['filing']['accession']==f['accession'])[k] for k in ['accession',*FIELDS[:3]]} for f in manifest]
+ write_csv(data/'filing_metadata.csv',metadata,['accession',*FIELDS[:3]])
  return final_summary
 if __name__=='__main__':
  parser=argparse.ArgumentParser();parser.add_argument('zip_path');parser.add_argument('--output',default='.');args=parser.parse_args()
