@@ -1,9 +1,0 @@
-{
-  "filing_rows": 100,
-  "filings_with_retained_products": 4,
-  "filings_without_retained_products": 96,
-  "retained_product_rows": 5,
-  "row_unit": "One processed filing; multiple products in one row are separated by semicolons",
-  "no_product_marker": "No qualifying product extracted",
-  "is_100_product_announcements": false
-}
