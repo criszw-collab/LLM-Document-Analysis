@@ -1,0 +1,12 @@
+# Matches main notebook setup. Versions were not locked in the supplied run.
+requests
+pandas
+beautifulsoup4
+lxml
+pypdf
+jsonschema
+tqdm
+ipywidgets
+tzdata
+reportlab
+# Google Colab supplies its own runtime helpers; Ollama is installed separately.

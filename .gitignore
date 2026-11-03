@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+# Runtime sources and responses belong in the saved project, not Git.
+checkpoints/
+responses/
+source_cache/
+sec8k_assignment/
+SEC8K_ASSIGNMENT/
+STOP.txt

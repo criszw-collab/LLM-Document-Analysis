@@ -1,0 +1,41 @@
+{
+  "check_type": "offline structural checks; not independent source validation",
+  "row_count": 100,
+  "company_ticker_count": 70,
+  "columns": [
+    "company_name",
+    "stock_name",
+    "filing_time",
+    "new_product",
+    "product_description"
+  ],
+  "rows_with_blank_required_values": 0,
+  "description_min_characters": 55,
+  "description_max_characters": 179,
+  "exact_ticker_product_duplicates": 0,
+  "descriptions_containing_CJK_characters": 7,
+  "original_uploads": [
+    {
+      "original_filename": "SEC_8K_Standalone_Commented_Colab (1)(2).ipynb",
+      "repository_path": "notebooks/SEC_8K_Product_Analysis.ipynb",
+      "sha256": "7f6d027d7f7f6cf0134f0c98e8fe2086a15abaf63bce04ba8e331bd3e0f5d152"
+    },
+    {
+      "original_filename": "final_csv(2).csv",
+      "repository_path": "data/products.csv",
+      "sha256": "7f06dfa3dd05a383fbd34180de12f59f3e11c10228c4d4d5f4099e4632b69167"
+    },
+    {
+      "original_filename": "SEC 8-K Methodology Report.pdf",
+      "repository_path": "reports/SEC_8K_Methodology_Report.pdf",
+      "sha256": "59b14bd47cc4939cbb90774e260fb54e79c32eee84dc15b39630508f7455a7ee"
+    },
+    {
+      "original_filename": "SEC_8K_Fresh_Simple_Package(1).zip",
+      "repository_path": "archive/SEC_8K_Fresh_Simple_Package.zip",
+      "sha256": "58f0aab79b006ad84689be9990164e0adfdbb8279864d31ffe4480015d5b836f"
+    }
+  ],
+  "inference_rerun_for_commit": false,
+  "dataset_manually_edited": false
+}
