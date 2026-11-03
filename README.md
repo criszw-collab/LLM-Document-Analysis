@@ -7,9 +7,25 @@ Project: https://github.com/criszw-collab/LLM-Document-Analysis
 
 The required output is **100 actual product-announcement entries**, with a product name and a description shorter than 180 characters for each. Processing 100 filings does not satisfy that count. A filing-status CSV containing no-product markers does not satisfy it either.
 
-**The target has not yet been achieved.** The previous completed run analyzed 100 filings but retained only five product-family rows. Those results, reports, scripts and the 100-filing status CSV are preserved under [`prior_run/`](prior_run/). They are preliminary/history, not a completed 100-product submission. No fake, repeated or placeholder products have been added.
+**The target has not yet been achieved.** An earlier completed run analyzed 100 filings but retained only five product-family rows; the newer 881-filing run below retained 28 provisional entries. Those results, reports, scripts and the 100-filing status CSV are preserved under [`prior_run/`](prior_run/). They are preliminary/history, not a completed 100-product submission. No fake, repeated or placeholder products have been added.
 
-## Use the new Colab notebook
+## Continue the completed 881-filing run
+
+Your latest saved run attempted 881 filings, completed 874 processing records and retained **28 provisional product entries** in 54.66 recorded minutes. It exhausted the candidate pool. These are not 100 verified product announcements; seven non-mutating quality flags are recorded in the progress snapshot.
+
+[Open the continuation notebook in Colab](https://colab.research.google.com/github/criszw-collab/LLM-Document-Analysis/blob/main/SEC_8K_Continue_Expanded_SEC_Sources.ipynb)
+
+Use the same Drive project, model and extraction settings. Run the continuation cells in order; it restores the saved ZIP only if Drive is missing the project, appends additional SEC 8-K candidates, and reuses completed checkpoints. The SEC ticker-map snapshot contains 124 valid additional ticker candidates; actual 2025 8-K eligibility is checked during discovery. It does not replace the original extraction fingerprint or repeat completed old filings.
+
+- [Course-source selection and scope](DATA_SOURCES.md)
+- [Expansion helper](continuation/expand_sec_sources.py)
+- [Expansion tests](continuation/test_expansion.py)
+- [Latest provisional 28-row CSV](progress_28/products_partial.csv)
+- [Quality flags](progress_28/quality_flags.csv)
+
+The new source discovery has not been live-run here; continue it in Colab. The helper passed interruption/preservation tests, and a no-inference compatibility check loaded all 881 actual checkpoints and retained the same 28 entries.
+
+## Start a separate fresh run only if needed
 
 [Open the 100-product notebook in Colab](https://colab.research.google.com/github/criszw-collab/LLM-Document-Analysis/blob/main/SEC_8K_100_Product_Announcements_Colab.ipynb)
 
